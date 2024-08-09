@@ -4,4 +4,4 @@ baseurl: ""
 url: "https://MYL-FluffyFFCatBall.github.io/upgraded-Fluffffffffcatmount" 
 markdown: kramdown
 
-theme: minima
+remote_theme: "jekyll/minima"
