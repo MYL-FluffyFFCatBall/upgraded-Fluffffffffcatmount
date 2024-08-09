@@ -28,3 +28,13 @@ date: 2024-08-09
 问题排查：
 - 检查配置：permalink
 - 没有 _site 文件夹被生成
+
+⭐确认原因：`<a href="{{ post.url }}">{{ post.title }}</a>` 生成了错误的链接。
+- github-pages 的链接是 `https://myl-fluffyffcatball.github.io/upgraded-Fluffffffffcatmount`
+- 因此，将 _config 文件修改为
+  ```
+  baseurl: "/upgraded-Fluffffffffcatmount" # 项目页面的路径
+  url: "https://myl-fluffyffcatball.github.io" # GitHub Pages 根 URL
+  ```
+  并修改生成 url 的路径：`{{ site.url }}{{ site.baseurl }}{{ post.url }}`
+  问题解决
