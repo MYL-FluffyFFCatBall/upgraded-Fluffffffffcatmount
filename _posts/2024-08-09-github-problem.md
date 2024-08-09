@@ -59,14 +59,7 @@ date: 2024-08-09
 ❌**代码块内的代码被错误地解析了**
 ⭐用
 {% raw %}
-```liquid
-{% raw %}
-```
+  {% raw %} 和 {% endraw %}
 {% endraw %}
-和
-{% raw %}
-```liquid
-{% endraw %}
-```
-{% endraw %}
+
 包围源代码，问题解决。
