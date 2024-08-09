@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Home
+title:  "Home"
 ---
 this is an index file. to implement.
 
