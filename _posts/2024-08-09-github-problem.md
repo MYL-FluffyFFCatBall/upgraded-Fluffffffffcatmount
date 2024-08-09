@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "建立个人博客时遇到的问题"
 date: 2024-08-09
 ---
