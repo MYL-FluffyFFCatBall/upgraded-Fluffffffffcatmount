@@ -4,7 +4,7 @@ title: "建立个人博客时遇到的问题"
 date: 2024-08-09
 ---
 在 posts 文件夹中加了 .md 文件，index.md 中写了以下内容：
-```
+```liquid
 <ul>
   {% for post in site.posts %}
     <li>
@@ -29,12 +29,23 @@ date: 2024-08-09
 - 检查配置：permalink
 - 没有 _site 文件夹被生成
 
-⭐确认原因：`<a href="{{ post.url }}">{{ post.title }}</a>` 生成了错误的链接。
-- github-pages 的链接是 `https://myl-fluffyffcatball.github.io/upgraded-Fluffffffffcatmount`
-- 因此，将 _config 文件修改为
+⭐确认原因：
+```liquid 
+<a href="{{ post.url }}">{{ post.title }}</a>
+```
+生成了错误的链接。
+- github-pages 的链接是
+ ```liquid
+   https://myl-fluffyffcatball.github.io/upgraded-Fluffffffffcatmount
   ```
+- 
+- 因此，将 _config 文件修改为
+  ```yaml
   baseurl: "/upgraded-Fluffffffffcatmount" # 项目页面的路径
   url: "https://myl-fluffyffcatball.github.io" # GitHub Pages 根 URL
   ```
-  并修改生成 url 的路径：`{{ site.url }}{{ site.baseurl }}{{ post.url }}`
+  并修改生成 url 的路径：
+  ```liquid
+  {{ site.url }}{{ site.baseurl }}{{ post.url }}
+  ```
   问题解决
