@@ -1,6 +1,6 @@
 title: My Blog
 description: 猫猫山的博客。
 baseurl: ""
-url: "https://myl-fluffyffcatball.github.io/upgraded-Fluffffffffcatmount/" 
+url: "https://myl-fluffyffcatball.github.io"
 markdown: kramdown
 theme: minima
