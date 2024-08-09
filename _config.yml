@@ -3,5 +3,4 @@ description: 猫猫山的博客。
 baseurl: ""
 url: "https://MYL-FluffyFFCatBall.github.io/upgraded-Fluffffffffcatmount" 
 markdown: kramdown
-
-remote_theme: "jekyll/minima"
+theme: minima
