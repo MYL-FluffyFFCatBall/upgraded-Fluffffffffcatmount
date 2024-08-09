@@ -1,6 +1,7 @@
 ---
-layout: post
+layout: default
 date:   2024-08-09
+title:  Home
 ---
 this is an index file. to implement.
 
